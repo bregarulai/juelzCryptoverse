@@ -12,6 +12,7 @@ import {
 import icon from '../images/cryptocurrency.png';
 
 const { Title } = Typography;
+const { Item } = Menu;
 
 const Navbar = () => {
   return (
@@ -25,6 +26,20 @@ const Navbar = () => {
 
           </Button> */}
       </div>
+      <Menu theme='dark'>
+        <Item icon={<HomeOutlined />}>
+          <Link to='/'>Home</Link>
+        </Item>
+        <Item icon={<FundOutlined />}>
+          <Link to='/cryptocurrencies'>Cryptocurrencies</Link>
+        </Item>
+        <Item icon={<MoneyCollectOutlined />}>
+          <Link to='/exchanges'>Exchanges</Link>
+        </Item>
+        <Item icon={<BulbOutlined />}>
+          <Link to='/news'>News</Link>
+        </Item>
+      </Menu>
     </div>
   );
 };
