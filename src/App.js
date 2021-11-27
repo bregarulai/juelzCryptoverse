@@ -5,6 +5,8 @@ import "./App.css";
 import { Navbar } from "./components";
 import { Cryptocurrencies, CryptoDetails, Exchanges, HomePage, News } from "./pages";
 
+const {Title} = Typography
+
 function App() {
   return <div className="app">
     <div className="navbar">
@@ -23,7 +25,15 @@ function App() {
           </div>
         </Layout> 
       <div className="footer">
-
+          <Title level={5} style={{color: "white", textAlign: "center"}}>
+            Juelz Cryptoverse <br />
+            All rights reserved
+          </Title>
+          <Space>
+            <Link to='/'>Home</Link>
+            <Link to='/exchanges'>Exchanges</Link>
+            <Link to='/news'>News</Link>
+          </Space>
       </div>
     </div>
   </div>;
