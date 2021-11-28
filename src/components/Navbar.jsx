@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className='nav-container'>
       <div className='logo-container'>
         <Avatar src={icon} size='large' />
-        <Title level={2} className='logo'>
+        <Title level={5} className='logo'>
           <Link to='/'>Juelz Cryptoverse</Link>
         </Title>
         {/* <Button className='menu-control-container'>
@@ -27,16 +27,16 @@ const Navbar = () => {
           </Button> */}
       </div>
       <Menu theme='dark'>
-        <Item icon={<HomeOutlined />}>
+        <Item key='home' icon={<HomeOutlined />}>
           <Link to='/'>Home</Link>
         </Item>
-        <Item icon={<FundOutlined />}>
+        <Item key='cryptocurrencies' icon={<FundOutlined />}>
           <Link to='/cryptocurrencies'>Cryptocurrencies</Link>
         </Item>
-        <Item icon={<MoneyCollectOutlined />}>
+        <Item key='exchanges' icon={<MoneyCollectOutlined />}>
           <Link to='/exchanges'>Exchanges</Link>
         </Item>
-        <Item icon={<BulbOutlined />}>
+        <Item key='news' icon={<BulbOutlined />}>
           <Link to='/news'>News</Link>
         </Item>
       </Menu>
