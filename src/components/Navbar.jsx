@@ -19,7 +19,7 @@ const Navbar = () => {
     <div className='nav-container'>
       <div className='logo-container'>
         <Avatar src={icon} size='large' />
-        <Title level={5} className='logo'>
+        <Title level={3} className='logo'>
           <Link to='/'>Juelz Cryptoverse</Link>
         </Title>
         {/* <Button className='menu-control-container'>
