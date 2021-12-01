@@ -28,7 +28,7 @@ const CryptoDetails = () => {
   const { coinId } = useParams();
   const [timePeriod, setTimePeriod] = useState('7d');
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
-  const { data: coinHistory } = useGetCryptoHistoryQuery({
+  const { data: coinHistory, error } = useGetCryptoHistoryQuery({
     coinId,
     timePeriod,
   });
