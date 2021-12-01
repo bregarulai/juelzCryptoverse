@@ -25,6 +25,11 @@ const News = ({ simplified }) => {
 
   return (
     <Row gutter={[24, 24]}>
+      <Col span={24}>
+        <Title level={2} className='page-title'>
+          Cryptocurrencies News
+        </Title>
+      </Col>
       {!simplified && (
         <Col span={24}>
           <Select
